@@ -57,7 +57,7 @@ services:
   webserver:
     build: .
     ports:
-      - "8080:80"
+      - "80:80"
     volumes:
       - ./data:/usr/share/nginx/html
     container_name: nginx_volume_test
