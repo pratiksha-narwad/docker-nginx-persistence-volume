@@ -14,7 +14,7 @@ cd docker-nginx-persistence-volume
 
 sudo docker run -d -p 80:80 nginx
 
-docker volume create nginx_volume_test
+sudo docker volume create nginx_volume_test
 
 docker volume ls 
 
