@@ -80,7 +80,7 @@ After defining the Docker Compose setup, you need to copy the `index.html` file 
 Run container:
 
 ```bash
-docker-compose up -d --build
+docker compose up -d --build
 ```
 
 Find volume name:
@@ -92,7 +92,7 @@ docker volume ls
 Find mount path:
 
 ```bash
-docker volume inspect dockervolumeproject_web_data
+docker volume inspect docker-nginx-persistence-volume_web_data
 ```
 
 Copy file:
