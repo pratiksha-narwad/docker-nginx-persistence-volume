@@ -6,6 +6,8 @@ Run an Nginx container that serves content from a volume so that data persists e
 ---
 # manual persistent volume with nginx 
 ```
+// persistent volume with nginx 
+
 git clone https://github.com/atulkamble/docker-nginx-persistence-volume.git
 
 cd docker-nginx-persistence-volume
@@ -21,6 +23,12 @@ or
 docker ps -a
 
 docker cp ./data/index.html 4b97ab275607:/usr/share/nginx/html/index.html
+
+docker system prune -a
+
+docker compose up --build 
+
+docker compose down 
 ```
 
 ## 📂 Project Structure:
