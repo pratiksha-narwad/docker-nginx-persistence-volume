@@ -6,9 +6,10 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - web_data:/usr/share/nginx/html:ro
+      - web_data:/usr/share/nginx/html
     container_name: nginx_volume_test
 
 volumes:
   web_data:
+    name: docker-volume-project_web_data
     driver: local
