@@ -53,20 +53,14 @@ EXPOSE 80
 (Defines service, volume, and volume binding)
 
 ```yaml
-version: '3.8'
-
 services:
   webserver:
     build: .
     ports:
       - "8080:80"
     volumes:
-      - web_data:/usr/share/nginx/html:ro
+      - ./data:/usr/share/nginx/html
     container_name: nginx_volume_test
-
-volumes:
-  web_data:
-    driver: local
 ```
 
 ---
