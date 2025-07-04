@@ -98,6 +98,7 @@ docker volume inspect docker-nginx-persistence-volume_web_data
 Copy file:
 
 ```bash
+docker compose up -d --build
 docker cp ./data/index.html nginx_volume_test:/usr/share/nginx/html/index.html
 ```
 
